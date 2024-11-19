@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Sistema do SuperDev - Login</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!-- 
+            Label é um rótulo, serve para identificar para que serve o input
+                for => é a forma de informar que aquela label está atrelada ao input
+            Input permitir o usuário prover uma entrada no sistema, ou seja, 
+                    digitar o login neste cenário
+                type => 
+                    text => é utilizado para o usuário digitar um texto
+                    password => é utilizado para o usuário digitar uma senha
+                id => é um identificador único da página
+            form é utilizado para enviar dados do front-end(tela) para o back-end(servidor)
+                method: 
+                    get é utilizado para enviar os dados na URL
+                    post é utilizado para enviar os dados para o back-end sem ser na 
+                            URL(por debaixo dos panos)
+                action: é o lugar para onde os dados serão enviados
+         -->
+        <form method="post" action="login.php">
+            <label for="campo-login">Login</label>
+            <input type="text" id="campo-login" name="login">
+            
+            <label for="campo-senha">Senha</label>
+            <input type="password" id="campo-senha" name="senha">
+            
+            <button type="submit">Entrar</button>
+        </form>
+    </body>
+</html>
+
+<!--
+    Banco de Dados: MySQL, SQL Server, Oracle, PostgreSQL
+    BACK-END: é o servidor (python, java, c#, kotlin, php, javascript)
+    FRONT-END: é um site, um aplicativo (javascript, html, css, angular, react, typescript)
+    FULL STACK: Back-end front-end
+
+    Mobile: Kotlin/Java(Android), Swift(iOS), Flutter(Dart)(Android, iOS)
+    - Estagiário
+    - Junior
+    - Pleno
+    - Senior
+    - Especialista I
+    - Especialista II
+    - Especialista III
+    - Principal
+-->
+

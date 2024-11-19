@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperDev - Cadastro Time</title>
+</head>
+<body>
+    <form action="http://localhost:8000/time/cadastrar" method="POST">
+        <div>
+            <label for="campo-time">Time</label>
+            <input type="text" name="time" id="campo-time">
+        </div>
+
+        <div>
+            <label for="campo-serie">Serie</label>
+            <select name="serie" id="campo-serie">
+                <option disabled selected>Selecione uma opção</option>
+                <option value="A">Serie A</option>
+                <option value="B">Serie B</option>
+                <option value="C">Serie C</option>
+            </select>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>

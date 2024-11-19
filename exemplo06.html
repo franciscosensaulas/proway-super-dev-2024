@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Sistema do SuperDev - Ponto Turístico</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <!--
+            ✔ Nome
+            ✔ Endereço
+            ✔ Descrição
+            ✔ Foto
+            ✔ Telefone
+            ✔ Link
+        -->
+
+        <!-- 
+            localhost/127.0.0.1 é a tua máquina
+         -->
+         <h1>Cadastro de Ponto Turístico</h1>
+        <form action="http://localhost:5000/pontos-turisticos/salvar" method="post">
+            <div>
+                <label for="campo-nome">Nome *</label>
+                <input type="datetime-local" id="campo-nome" name="nome" required 
+                    placeholder="Digite o nome do ponto turístico">
+
+                <label for="campo-endereco">Endereço *</label>
+                <input type="text" id="campo-endereco" name="endereco" required>
+            </div>
+
+            <div>
+                <label for="campo-telefone">Telefone *</label>
+                <input type="tel" id="campo-telefone" name="telefone" required
+                    placeholder="(99) 99999-9999">
+
+                <label for="campo-site">Site *</label>
+                <input type="url" id="campo-site" name="site" required>
+            </div>
+
+            <div>
+                <label for="campo-foto">Foto *</label>
+                <input type="file" id="campo-foto" name="foto" required>
+            </div>
+                
+            <div>
+                <label for="campo-descricao">Descrição</label>
+                <textarea id="campo-descricao" rows="10" cols="50" name="descricao"></textarea>
+            </div>
+
+            <button type="submit">Cadastrar</button>
+
+        </form>
+
+    </body>
+</html>
