@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperDev - Cadastro de Projeto</title>
+</head>
+<body>
+    <form action="https://localhost:5000/projeto">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" name="nome">
+        </div>
+
+        <div>
+            <label for="campo-linguagem">Linguagem</label>
+            <input list="linguagens" id="campo-linguagem" name="linguagem">
+
+            <datalist id="linguagens">
+                <option value="C#"></option>
+                <option value="Dart"></option>
+                <option value="Python"></option>
+                <option value="Java"></option>
+                <option value="JavaScript"></option>
+                <option value="PHP"></option>
+                <option value="Cobol"></option>
+                <option value="Assembly"></option>
+            </datalist>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>

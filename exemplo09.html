@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperDev - Cadastro de Estudante</title>
+</head>
+
+<body>
+    <!-- Nome, hora da aula, Idiomas -->
+    <form action="https://localhost:5000/estudantes/cadastrar">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" name="nome" required>
+        </div>
+
+        <div>
+            <label for="campo-hora">Hora da Aula</label>
+            <input type="time" id="campo-hora" name="hora-aula" required>
+        </div>
+
+        <div>
+            <span>Idiomas</span>
+
+            <div>
+                <input type="checkbox" name="idioma" id="idioma-alemao" value="Alemão">
+                <label for="idioma-alemao">Alemão</label>
+            </div>
+            <div>
+                <input type="checkbox" name="idioma" id="idioma-espanhol" value="Espanhol">
+                <label for="idioma-espanhol" >Espanhol</label>
+            </div>
+            <div>
+                <input type="checkbox" name="idioma" id="idioma-frances" value="Francês">
+                <label for="idioma-frances" >Francês</label>
+            </div>
+            <div>
+                <input type="checkbox" name="idioma" id="idioma-ingles" value="Inglês">
+                <label for="idioma-ingles" >Inglês</label>
+            </div>
+            <div>
+                <input type="checkbox" name="idioma" id="idioma-italiano" value="Italiano">
+                <label for="idioma-italiano" >Italiano</label>
+            </div>
+            <div>
+                <input type="checkbox" name="idioma" id="idioma-portugues" value="Português">
+                <label for="idioma-portugues" >Português</label>
+            </div>
+        </div>
+
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+
+</html>

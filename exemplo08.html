@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperDev - Cadastro de Sala</title>
+</head>
+
+<body>
+    <form method="post" action="https://localhost:3000/salas/cadastrar">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" id="campo-nome" required name="nome">
+        </div>
+        <div>
+            <span>Cor</span>
+            <!-- 
+                ID é único na página
+                Name pode se repetir em inputs do tipo radio 
+            -->
+            <div>
+                <input type="radio" id="cor-amarelo" name="cor" value="amarelo">
+                <label for="cor-amarelo">Amarelo</label>
+            </div>
+
+            <div>
+                <!-- Radio Button -->
+                <input type="radio" id="cor-azul" name="cor" value="azul">
+                <label for="cor-azul">Azul</label>
+            </div>
+
+            <div>
+                <input type="radio" id="cor-black" name="cor" value="preto">
+                <label for="cor-black">Black</label>
+            </div>
+
+            <div>
+                <input type="radio" id="cor-branca" name="cor" value="branco">
+                <label for="cor-branca">Branca</label>
+            </div>
+
+            <div>
+                <input type="radio" id="cor-cyan" name="cor" value="cyan">
+                <label for="cor-cyan">Cyan</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="cor-laranja" name="cor" value="laranja">
+                <label for="cor-laranja">Laranja</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="cor-magenta" name="cor" value="magenta">
+                <label for="cor-magenta">Magenta</label>
+            </div>
+            
+            <div>
+                <input type="radio" id="cor-rosa" name="cor" value="rosa">
+                <label for="cor-rosa">Rosa</label>
+            </div>
+
+            <button type="submit">Salvar</button>
+            <!-- 
+                https://dontpad.com/faulas/html
+                https://github.com/franciscosensaulas/proway-super-dev-2024
+                Magenta, Laranja, Branca, Rosa, Black e Cyan -->
+        </div>
+    </form>
+</body>
+
+</html>
