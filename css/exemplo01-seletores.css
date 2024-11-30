@@ -1,0 +1,169 @@
+body {
+    /* Define a cor de fundo do elemento <body>. A cor é especificada em valores RGB (red, green, blue). */
+    background-color: rgb(30, 30, 47);
+    color: white; /* Define a cor do texto dentro do elemento <body> como branca */
+    
+    /* Define a fonte principal como Arial. Se não for encontrada, usa Helvetica, e se ainda não for encontrada, usa qualquer fonte sans-serif disponível. */
+    font-family: Arial, Helvetica, sans-serif;
+    
+    margin: 0; /* Remove as margens padrão ao redor do elemento <body> */
+    
+    /* Define um espaço interno de 20px em todos os lados do elemento <body> */
+    padding: 20px;
+}
+
+/* Seletor universal que aplica um estilo a todos os elementos da página */
+* {
+    /* Faz com que a largura e altura dos elementos incluam padding e border (box-sizing: border-box). Isso evita problemas de cálculo de largura */
+    box-sizing: border-box;
+}
+
+/* Seletor de tipo para a tag <h1> */
+h1 {
+    /* Define a cor do texto do <h1> usando um valor hexadecimal */
+    color: #f39c12;
+}
+
+/* Seletor de ID. Aplica o estilo ao elemento que tiver o id="importante" */
+#importante {
+    /* Adiciona um sublinhado ao texto do elemento */
+    text-decoration: underline;
+    
+    /* Define a cor do texto do elemento com um valor hexadecimal */
+    color: #3498db;
+}
+
+/* Seletor de classe. Aplica o estilo a todos os elementos com a classe "destaque" */
+.destaque {
+    /* Define a cor do texto com um valor hexadecimal */
+    color: #e74c3c;
+    
+    /* Define o texto como negrito */
+    font-weight: bold;
+}
+
+/* Seletor de descendente. Aplica o estilo ao elemento <p> que é filho de <span>, que por sua vez é filho de <div> */
+div p {
+    /* Define a cor do texto do <p> */
+    color: #9d59b6;
+}
+
+/* Seletor de filho direto. Aplica o estilo somente aos elementos <li> que são filhos diretos de <ul> */
+ul>li {
+    /* Define a cor do texto do <li> */
+    color: #8e44ad;
+}
+
+/* Seletor de adjacente. Aplica o estilo ao elemento <p> que é adjacente a um <h2> */
+h2+p {
+    /* Define o estilo como itálico para o texto do <p> */
+    font-style: italic;
+    
+    /* Define a cor do texto do <p> */
+    color: #0cdcb2;
+}
+
+/* Seletor de irmão geral. Aplica o estilo a todos os elementos <p> que são irmãos de um <h2> */
+h2~p {
+    /* Define a cor do texto do <p> */
+    color: #d35400;
+}
+
+/* Seletor de atributo. Aplica o estilo a elementos <input> do tipo "text" */
+input[type="text"] {
+    /* Define a borda do elemento */
+    border: 2px solid #34495e;
+    
+    /* Adiciona um espaçamento interno */
+    padding: 5px;
+    
+    /* Define a cor de fundo do elemento */
+    background-color: #2c3e50;
+    
+    /* Define a cor do texto dentro do elemento */
+    color: #ecf0f1;
+}
+
+/* Seletor de atributo. Aplica o estilo a elementos <input> do tipo "password" */
+input[type="password"] {
+    /* Define a borda do elemento como tracejada */
+    border: 2px dashed #e74c3c;
+    
+    /* Adiciona um espaçamento interno maior */
+    padding: 10px;
+    
+    /* Define a cor de fundo do elemento */
+    background-color: #1e272e;
+    
+    /* Define a cor do texto dentro do elemento */
+    color: #f5f5f5;
+    
+    /* Adiciona bordas arredondadas */
+    border-radius: 10px;
+    
+    /* Define o estilo do texto como itálico */
+    font-style: italic;
+}
+
+/* Seletor de grupo. Aplica o mesmo estilo a ambos os elementos <h1> e <h2> */
+h1,
+h2 {
+    /* Define a margem superior e inferior de 20px */
+    margin: 20px 0;
+    
+    /* Adiciona uma linha de borda na parte inferior */
+    border-bottom: 1px solid #444;
+    
+    /* Adiciona um espaçamento inferior */
+    padding-bottom: 5px;
+}
+
+/* Pseudo-classes */
+
+/* Aplica estilo ao elemento <a> */
+a {
+    /* Define a cor do texto do link */
+    color: #1abc9c;
+    
+    /* Remove o sublinhado dos links */
+    text-decoration: none;
+}
+
+/* Aplica estilo quando o usuário passa o mouse sobre o link */
+a:hover {
+    /* Altera a cor do link quando o mouse passa por cima */
+    color: #f39c12;
+}
+
+/* Aplica um estilo alternado para elementos <li> de acordo com sua posição */
+li:nth-child(odd) {
+    /* Define a cor de fundo dos elementos <li> ímpares */
+    background-color: #34495e;
+}
+
+li:nth-child(even) {
+    /* Define a cor de fundo dos elementos <li> pares */
+    background-color: #2c3e50;
+}
+
+/* Aplica espaçamento interno aos elementos <li> */
+li {
+    padding: 5px;
+}
+
+/* Pseudo-elementos */
+
+/* Aplica um estilo à primeira linha de um parágrafo */
+p::first-line {
+    /* Define o estilo da primeira linha do parágrafo como negrito */
+    font-weight: bold;
+}
+
+/* Aplica um conteúdo adicional após o parágrafo */
+p::after {
+    /* Define o texto que será exibido após o conteúdo do parágrafo */
+    content: " [Fim do parágrafo]";
+    
+    /* Define a cor do texto do pseudo-elemento */
+    color: #7f8c8d;
+}

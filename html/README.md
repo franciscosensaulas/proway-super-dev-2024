@@ -120,3 +120,55 @@ Crie uma página HTML para cadastro de um veículo com os seguintes campos:
 - Ano de fabricação (campo de data, com valor mínimo de 1950 e máximo de 2024)
 - Cor (mínimo de 3 caracteres, máximo de 20 caracteres)
 - Placa (campo de texto, mínimo de 7 caracteres, com pattern para validar o formato da placa)
+
+
+## Outros exercícios
+1. Sistema de Biblioteca Online
+Página principal (biblioteca.html):
+
+Deve conter links para as páginas:
+Cadastro de Livros (livro-cadastro.html)
+Lista de Livros (livros.html)
+Cadastro de Cliente(cliente-cadastro.html)
+Lista de Clientes(clientes.html)
+
+Página de Cadastro de Livros (livro-cadastro.html)
+- Título do livro
+- Autor
+- Categoria (select colocar 6 categorias como options)
+- ISBN
+- Data de publicação
+- Preço
+[0-9][0-9][0-9]\.[0-9][0-9][0-9]\.[0-9][0-9][0-9]\-[0-9][0-9]
+
+Página de Lista de Livros (livros.html) / Preencher com 4 livros existentes
+
+Deve exibir uma tabela com:
+- Nome do livro
+- Nome do autor
+- ISBN
+
+Página de Cadastro de Cliente (cliente-cadastro.html)
+- Nome
+- Sobrenome
+- CPF
+- Data de Nascimento
+- Foto de perfil
+Lembrar de colocar name, id e required para campos obrigatórios
+
+
+Página de Lista de Clientes (clientes.html) / Preencher com 6 clientes (utilizar http://www.4devs.com.br)
+
+Utilizar uma tabela
+- Nome Completo
+- CPF
+- Idade
+
+Página de Lista das Reservas dos Livros
+
+
+Página de Cadastro de Reservas de Livro
+Cliente (select)
+Livro (select)
+Data de Entrada
+Data de Término

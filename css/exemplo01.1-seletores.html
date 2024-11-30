@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Pseudo-Classes - Dark Mode</title>
+  <style>
+    /* Estilos de modo escuro */
+    body {
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    button {
+      background-color: #333;
+      color: #e0e0e0;
+      border: 1px solid #555;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #444;
+    }
+
+    button:active {
+      background-color: #555;
+      color: #fff;
+    }
+
+    button:disabled {
+      background-color: #222;
+      color: #777;
+      cursor: not-allowed;
+    }
+
+    input {
+      background-color: #333;
+      border: 1px solid #555;
+      color: #e0e0e0;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    input:focus {
+      border-color: #007BFF;
+      outline: none;
+    }
+
+    input[type="checkbox"] {
+      accent-color: #28a745;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      padding: 5px;
+    }
+
+    li:nth-child(odd) {
+      background-color: #1e1e1e;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    p:nth-of-type(2) {
+      color: #ff6347; /* Cor de destaque */
+    }
+
+    p:not(.highlight) {
+      color: #bbb;
+    }
+
+    a {
+      color: #1e90ff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #section2:target {
+      background-color: #333;
+      border: 1px solid #555;
+      padding: 10px;
+    }
+
+    /* Pseudo-classe :lang() */
+    p:lang(fr) {
+      font-style: italic;
+    }
+
+    /* Pseudo-classe :root */
+    :root {
+      --main-color: #007BFF;
+    }
+
+    /* Pseudo-classe :default */
+    input:default {
+      border: 2px solid #00aaff;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo de Pseudo-Classes - Modo Escuro</h1>
+
+  <button>Botão</button>
+  <button disabled>Botão Desativado</button>
+
+  <input type="text" placeholder="Clique aqui para focar">
+  <input type="checkbox" checked> Checkbox Marcado
+
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <p>Parágrafo normal</p>
+  <p class="highlight">Parágrafo destacado</p>
+  <p lang="fr">Parágrafo em francês</p>
+
+  <div id="section2">Esta é a seção 2</div>
+  <div>Esta div não será estilizada pelo :empty</div>
+
+  <a href="#section2">Ir para a Seção 2</a>
+
+  <p id="not-highlighted" class="not-highlight">Este parágrafo não está destacado</p>
+
+  <script>
+    // Um exemplo de como a pseudo-classe :target funciona
+    document.querySelector('a').addEventListener('click', function() {
+      alert('Você foi direcionado para a seção 2');
+    });
+  </script>
+</body>
+</html>
