@@ -1,0 +1,49 @@
+body {
+    background-color: #000;
+    color: white;
+}
+
+h2 {
+    color: #ddd;
+}
+
+.box {
+    background-color: brown;
+}
+
+/* Margem topo */
+.margin-top {
+    margin-top: 10px;
+    background-color: #d3d3d3;
+}
+
+/* Margem esquerda */
+.margin-left {
+    margin-left: 50px;
+    background-color: #a92e2a;
+}
+
+/* Margem base */
+.margin-bottom {
+    margin-bottom: 100px;
+    background-color: #3a0d89;
+}
+
+/* Margem direita */
+.margin-right {
+    margin-right: 20px;
+    background-color: #918271;
+}
+
+.margin-both{ 
+    height: 100px;
+    background-color: rgb(6, 135, 248);
+    /* margin-top: 20px;
+    margin-right: 400px;
+    margin-bottom: 21px;
+    margin-left: 401px; */
+    /* 
+    Shorthand: forma reduzida de fazer o margin: topo, direita, baixo e esquerda
+    */
+    margin: 20px 400px 21px 401px;
+}
