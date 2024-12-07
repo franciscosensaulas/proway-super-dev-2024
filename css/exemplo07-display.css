@@ -1,0 +1,42 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    margin: 20px;
+}
+
+div.block{
+    display: block;
+    background-color: lightblue;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid blue;
+}
+
+div.inline{
+    display: inline;
+    background-color: lightgreen;
+    padding: 10px;
+    margin: 10px 0px;
+    border: 2px solid green;
+}
+
+div.inline-block{
+    display: inline-block;
+    background-color: lightcoral;
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+    height: 45px;
+    text-align: center;
+    border: 2px solid red;
+}
+
+.descricao{
+    margin-bottom: 20px;
+    font-size: 1rem;
+}

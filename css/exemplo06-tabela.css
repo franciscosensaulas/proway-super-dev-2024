@@ -1,0 +1,68 @@
+table {
+    width: 80vw;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+tbody tr td img {
+    max-width: 150px;
+    border: 3px solid black;
+    border-radius: 8px;
+    background-size: cover;
+    transition: max-width 1s;
+}
+
+tbody tr td img:hover{
+    max-width: 160px;
+}
+
+td,
+th {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th{
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover{
+    background-color: rgb(221, 221, 221);
+}
+
+
+
+tbody tr{
+    min-height: 140px;
+    max-height: 140px;
+}
+
+.btn-editar{
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 2px;
+    color: white;
+    padding: 4px 8px;
+}
+
+.btn-editar:hover{
+    cursor: pointer;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-apagar{
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+    border-radius: 2px;
+    color: white;
+    padding: 4px 8px;
+}
+
+.btn-apagar:hover{
+    cursor: pointer;
+    background-color: #c82333;
+    border-color: #bd2130;
+}
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exemplo08-position.css">
+</head>
+<body>
+    <h1>Position</h1>
+
+    <p>A propriedade <code>position</code> determina como um elemento é posicionado dentro de seu contâiner ou na tela.</p>
+
+    <h2>Static</h2>
+    <p><code>static</code> é o valor padrão. O elemento é posicionado no fluxo normal do documento, sem ser afetado por outras propriedades de posição</p>
+    <div class="box static">Static</div>
+    
+    <h2>Relative</h2>
+    <p><code>relative</code> posiciona o elemento em relação à sua posição original no fluxo do documento. O elemento se move, mas o espaço original ainda é ocupado. Utilizado as propriedades: top, right, bottom e left para mover o elemento à sua posição original.</p>
+    <div class="box relative">Relative</div>
+
+    <h2 style="background-color: blueviolet; margin: 0px;">Fixed</h2>
+    <p><code>fixed</code> posiciona o elemento em relação à janela de visualização (viewport) (navegador), ou seja, ele permanece fixo na tela ao rolar a página.</p>
+    <div class="box fixed">Fixed</div>
+
+    <h2>Absolute</h2>
+    <p><code>absolute</code> posiciona o elemento em relação ao seu container pai mais próximo que tenha um <code>position</code> diferente de <code>static</code>. Se não houver tal contâiner, serã posicionado em relação ao elemento raiz (geralmente o <code>body</code>).</p>
+    <div class="box absolute">Absolute</div>
+
+    <h2>Sticky</h2>
+    <p><code>sticky</code> é uma combinação de <code>relative</code> e <code>fixed</code>. O elemento se comporta como um elemento relativo até atingir um determinado ponto da tela, onde se fixa.</p>
+    <div class="box sticky">Sticky</div>
+</body>
+</html>

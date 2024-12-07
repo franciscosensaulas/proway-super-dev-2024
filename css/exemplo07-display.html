@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exemplo07-display.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Displays</h1>
+
+        <p class="descricao">
+            A propriedade <strong>display</strong> no CSS é utilizada para definir como os elementos são renderizados na página, ou seja, como eles se comportam visualmente e interagem com os outros elementos. Essa propriedade é essencial para estruturar layouts e ajustar a disposição de elementos na interface. Para a propriedade <code>display</code> temos os seguintes valores disponíveis: <strong>block</strong>, <strong>inline</strong>, <strong>inline-block</strong>, <strong>flex (veremos em um exemplo separado.)</strong>
+        </p>
+
+        <h2>Display: block</h2>
+        <p class="descricao">Ocupam toda a largura disponível e iniciam uma linha automaticamente. Tags que são display:block <code>p</code>, <code>h1</code>, <code>div</code></p>
+        <div class="block">Exemplo Block 1</div>
+        <div class="block">Exemplo Block 2</div>
+
+        <h2>Display: inline</h2>
+        <p class="descricao">Ocupam apenas o espaço necessário para o conteúdo e não iniciam uma nova linha. Tags que são display:inline <code>img</code>, <code>button</code>, <code>a</code>, <code>span</code>, <code>input</code>.</p>
+        <div class="inline">Elemento Inline 1</div>
+        <div class="inline">Elemento Inline 2</div>
+        <div class="inline">Elemento Inline 3</div>
+
+        <h2>Display: inline-block</h2>
+        <p class="descricao">São semelhantes a elementos inline, mas permitem definir largura e altura dos elementos. Eles não iniciam uma nova linha. Quando posso utilizar? Quando vc tem um elemento que deseja que tenha o comportamento inline(ocupe o menor espaço possível), porém definindo o width e/ou height.</p>
+        <div class="inline-block">Elemento inline-block 1</div>
+        <div class="inline-block">Elemento inline-block 2</div>
+        <div class="inline-block">Elemento inline-block 3</div>
+
+    </div>
+</body>
+</html>
