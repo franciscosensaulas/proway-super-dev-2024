@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exemplo11-formulario.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Colaborador</h1>
+        <form action="https://localhost:2000/cadastro-cliente" method="post">
+            <div class="form-row">
+                <div class="form-left">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" id="telefone" name="telefone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="data-nascimento">Data de Nascimento</label>
+                        <input type="date" id="data-nascimento" name="data-nascimento" required>
+                    </div>
+                </div>
+                <div class="form-right">
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="genero">Gênero</label>
+                        <select name="genero" id="genero">
+                            <option value="masculino">Masculino</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="endereco">Endereço</label>
+                        <textarea name="endereco" id="endereco"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button type="submit">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

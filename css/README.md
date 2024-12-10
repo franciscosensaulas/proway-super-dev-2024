@@ -70,3 +70,25 @@ Neste exercício, você irá aplicar e configurar bordas em elementos HTML utili
 - Utilize classes para estilizar os elementos.
 - Inclua diferentes estilos de borda (`solid`, `dotted`, `double`) para explorar a flexibilidade da propriedade `border`.
 - Teste o comportamento interativo com o efeito `hover` no botão.
+
+# Exercícios de CSS
+## Exercício 01
+Criar uma página web para listar os itens do estoque, assim como, seu cadastro. Deve conter os seguintes itens
+    - Listar os itens do estoque com as seguintes colunas
+        - Código
+        - Nome
+        - Quantidade
+        - Preço unitário
+        - Coluna de ação (botão de desfazer entrada, botão de editar entrada)
+    - Formulário para entrada de estoque do produto
+        - Campo de seleção do produto
+            - Preencher com 5 options, o value deve ser o código do produto
+        - Campo de quantidade
+        - Campo de preço unitário
+        - Botão de cadastrar
+Estilização da página:
+    - A lista deve ficar a esquerda
+        - As linhas da tabela devem ter hover
+        - Os botões da tabela devem ser customizados na cor azul e laranja
+    - O formulário deve ficar a direita
+        - Os campos devem estar estlizados.

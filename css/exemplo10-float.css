@@ -1,0 +1,49 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center;
+    color: #333;
+}
+
+.content{
+    overflow: hidden;
+}
+
+.float-left{
+    float: left;
+    width: 45%;
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+.float-right{
+    float: right;
+    width: 45%;
+    background-color: #FF5733;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+}
+.footer{
+    clear: both;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
