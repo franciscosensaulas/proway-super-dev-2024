@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exemplo04-seletores.css">
+</head>
+<body>
+    <h1 id="titulo">Título provisório</h1>
+    <div id="div-apresentada">
+        Essa é uma div que está sendo apresentada
+    </div>
+
+    <div class="div-cor-azul">
+        Essa div tem a cor padrão azul
+    </div>
+
+    <div id="div-sem-estilizacao">
+        Essa div não tem estilização
+    </div>
+
+    <button onclick="acaoBotaoApresentarOcultar()">Ocultar/Apresentar div</button>
+    <button onclick="alterarCorDiv()">Alterar cor da div azul</button>
+    <button onmouseover="estilizarDiv()">Adicionar classe para div sem estilização</button>
+    <button ondblclick="alterarTitulo()">Alterar o titulo (double click)</button>
+
+    <div>
+        <button onclick="decrementar()">-</button>
+        <button onclick="incrementar()">+</button>
+        <span>0</span>
+    </div>
+    <!--
+        onclick é o evento que é disparado quando o usuário fizer o clique do botão
+        onmouseover é o evento que é disparado quando o usuário passar o mouse por cima do botão
+        ondblclick é o evento que é disparado quando o usuário fizer o double click do botão
+    -->
+    <script src="exemplo04-seletores.js"></script>
+</body>
+</html>
