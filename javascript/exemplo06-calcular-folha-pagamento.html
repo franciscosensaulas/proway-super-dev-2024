@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="exemplo06-calcular-folha-pagamento.css">
+</head>
+
+<body>
+    <div>
+        <label for="campo-nome">Nome</label>
+        <input type="text" id="campo-nome" required minlength="10" maxlength="60">
+    </div>
+
+    <div>
+        <label for="campo-cargo">Cargo</label>
+        <select id="campo-cargo" onchange="preencherSalarioBaseValorHora()">
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Assistente">Assistente</option>
+            <option value="Junior">Junior</option>
+            <option value="Pleno">Pleno</option>
+            <option value="Senior">Senior</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="campo-matricula">Matricula</label>
+        <input type="number" id="campo-matricula">
+    </div>
+
+    <div>
+        <label for="campo-mes-referencia">Mês Referência</label>
+        <select id="campo-mes-referencia">
+            <option value="janeiro">Janeiro</option>
+            <option value="fevereiro">Fevereiro</option>
+            <option value="marco">Março</option>
+            <option value="abril">Abril</option>
+            <option value="maio">Maio</option>
+            <option value="junho">Junho</option>
+            <option value="julho">Julho</option>
+            <option value="agosto">Agosto</option>
+            <option value="setembro">Setembro</option>
+            <option value="outubro">Outubro</option>
+            <option value="novembro">Novembro</option>
+            <option value="dezembro">Dezembro</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="campo-ano-referencia">Ano Referência</label>
+        <select id="campo-ano-referencia">
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+        </select>
+    </div>
+
+    <div>
+        <span>Modalidade</span>
+        <input type="radio" id="campo-modalidade-horista" name="modalidade" value="horista"
+            onchange="apresentarDivModalidade()">
+        <label for="campo-modalidade-horista">Horista</label>
+        <input type="radio" id="campo-modalidade-mensalista" name="modalidade" value="mensalista"
+            onchange="apresentarDivModalidade()">
+        <label for="campo-modalidade-mensalista">Mensalista</label>
+    </div>
+
+    <div id="modalidade-horista" class="ocultar">
+        <div>
+            <span for="campo-valor-hora">Valor Hora</span>
+            <span id="campo-valor-hora-value">R$ 0,00</span>
+        </div>
+        
+        <div>
+            <label for="campo-quantidade-horas">Quantidade horas</label>
+            <input type="number" id="campo-quantidade-horas" min="1" max="300">
+        </div>
+    </div>
+
+    <div id="modalidade-mensalista" class="ocultar">
+        <div>
+            <span id="campo-salario-base">Salário Base</span>
+            <span id="campo-salario-base-value">R$ 0,00</span>
+        </div>
+    </div>
+
+    <button onclick="calcular()">Calcular</button>
+
+    <script src="exemplo06-calcular-folha-pagamento.js"></script>
+</body>
+
+</html>
