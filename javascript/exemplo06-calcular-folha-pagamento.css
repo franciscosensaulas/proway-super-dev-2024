@@ -1,3 +1,93 @@
 .ocultar {
     display: none;
 }
+.campos {
+    display: flex;
+    gap: 5px;
+    flex-direction: row;
+}
+.campos div{
+    flex-grow: 1;
+}
+.campos label {
+    display: block;
+}
+.campos input[type=text],
+.campos input[type=number],
+.campos select {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-sizing: border-box;
+    padding: 6px 6px;
+}
+
+.campos-modalidade div{
+    display: flex;
+    gap: 0;
+}
+
+.campos-modalidade span{
+    display: block;
+}
+
+.campos-referencia{
+    display: flex;
+    gap: 10px;
+    flex-grow: 1;
+}
+
+.campos-referencia-beneficios{
+    display: flex;
+}
+
+.campos-referencia div{
+    display: flex;
+    flex-direction: column;
+}
+
+.campos-referencia select{
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    padding: 6px 6px;
+    box-sizing: border-box;
+}
+
+.beneficios-titulo{
+    font-weight: bold;
+}
+
+.campos-beneficios{
+    flex-grow: 1;
+}
+
+.beneficios{
+    justify-content: flex-end;
+    align-items: start;
+}
+
+.beneficios div{
+    display: flex;
+    flex-direction: row;
+}
+
+.beneficio-plano-saude{
+    display: flex;
+    flex-direction: column;
+}
+
+.button-calcular{
+    display: flex;
+    justify-content: flex-end;
+}
+.button-calcular button{
+    padding: 3px 6px;
+    border-radius: 3px;
+    border: 1px solid green;
+    background-color: green;
+    color: white;
+}
+
+.button-calcular button:hover{
+    cursor: pointer;
+}
