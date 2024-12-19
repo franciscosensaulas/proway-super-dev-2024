@@ -3,6 +3,8 @@ let botaoCriarCampos = document.querySelector("#criar-campo");
 // Escopo dele é global
 let numeroDaSorte = 0;
 
+let quantidadeTentaivas = 5;
+
 function criarCampo() {
   // Criar uma tag label
   let labelNumero = document.createElement("label");
@@ -52,48 +54,62 @@ function validarNumeroDigitado(event) {
     return;
   }
 
-	let diferenca;
-	// Verificar se o número digitado é maior que o número da sorte, isso 
-	// é necessário pois a diferença não deve ser negativa
-	if(numeroDigitou > numeroDaSorte){
-		// Subtrair do número digitado o número da sorte
-		diferenca = numeroDigitou - numeroDaSorte;
-	}else{
-		// Subtrair do número da sorte o número digitado
-		diferenca = numeroDaSorte - numeroDigitou;
-	}
+  let diferenca;
+  // Verificar se o número digitado é maior que o número da sorte, isso
+  // é necessário pois a diferença não deve ser negativa
+  if (numeroDigitou > numeroDaSorte) {
+    // Subtrair do número digitado o número da sorte
+    diferenca = numeroDigitou - numeroDaSorte;
+  } else {
+    // Subtrair do número da sorte o número digitado
+    diferenca = numeroDaSorte - numeroDigitou;
+  }
 
-	console.log("Diferença: " + diferenca + "\nNúmero da sorte: " + numeroDaSorte);
-	let mensagem = "";
-	if(diferenca <= 3){
-		mensagem = "Pelando";
-	}else if(diferenca <= 8){
-		mensagem = "Quente";
-	} else if(diferenca <= 35){
-		mensagem = "Frio";
-	}else{
-		mensagem = "Congelando";
-	}
-	
-	// Chamando a função passando como parâmetro a mensagem de feedback que será exibida no span
-	criarSpanMensagemFeedback(mensagem);
-	campoNumero.focus();
+  quantidadeTentaivas = quantidadeTentaivas - 1;
+
+  console.log(
+    "Diferença: " + diferenca + "\nNúmero da sorte: " + numeroDaSorte
+  );
+  let mensagem = "";
+  if (diferenca <= 3) {
+    mensagem = "Pelando";
+  } else if (diferenca <= 8) {
+    mensagem = "Quente";
+  } else if (diferenca <= 35) {
+    mensagem = "Frio";
+  } else {
+    mensagem = "Congelando";
+  }
+
+  // Chamando a função passando como parâmetro a mensagem de feedback que será exibida no span
+
+  if (quantidadeTentaivas <= 0) {
+    alert("Game Over");
+    campoNumero.value = "";
+    mensagem = "Game Over";
+    // campoNumero.disabled = true;
+    quantidadeTentaivas = 5;
+    gerarNumeroDaSorte();
+  } else {
+    criarSpanMensagemFeedback(mensagem);
+    campoNumero.focus();
+  }
 }
 
-function criarSpanMensagemFeedback(mensagemFeedback){
-	// Verificar se o span com o id mensagem já existe
-	let span = document.querySelector("#mensagem")
-	// Verifica que o span não existe
-	if (span === null){
-		// Criar a span e adicionar no body
-		span = document.createElement("span");
-		span.id = "mensagem";
-		
-		let body = document.querySelector("body");
-		body.appendChild(span);
-	}
-	// Definir a mensagem para o usuário do quão perto está do número da sorte ou não
-	span.innerText = mensagemFeedback;
+function criarSpanMensagemFeedback(mensagemFeedback) {
+  // Verificar se o span com o id mensagem já existe
+  let span = document.querySelector("#mensagem");
+  // Verifica que o span não existe
+  if (span === null) {
+    // Criar a span e adicionar no body
+    span = document.createElement("span");
+    span.id = "mensagem";
+
+    let body = document.querySelector("body");
+    body.appendChild(span);
+  }
+  // Definir a mensagem para o usuário do quão perto está do número da sorte ou não
+  span.innerText = mensagemFeedback;
 }
 
 function desabilitarBotao() {
@@ -102,7 +118,7 @@ function desabilitarBotao() {
   // Forma alternativa de desabilitar o botão
   // botaoCriarCampos.setAttribute("disabled", "disabled");
 
-	botaoCriarCampos.style.display = "none";
+  botaoCriarCampos.style.display = "none";
 }
 
 function gerarNumeroDaSorte() {
