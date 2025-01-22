@@ -1,0 +1,35 @@
+.botao-pesquisa,
+.botao-entrar {
+    font-family: "Nosifer", serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+}
+
+.botao-entrar:hover,
+.botao-pesquisa:hover{
+    cursor: pointer;
+}
+
+.botao-entrar:hover{
+    color: #ec332e;
+    border: 1px solid #ec332e;
+    border-radius: 5px;
+}
+
+div.header {
+    background-color: #000;
+    height: 50px;
+}
+
+div.header div.botoes-direita {
+    display: inline;
+    float: right;
+    padding: 10px;
+}
+
+div.header img.logo {
+    height: 50px;
+}

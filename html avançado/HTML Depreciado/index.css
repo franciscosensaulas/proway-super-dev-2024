@@ -1,0 +1,73 @@
+.centralizado {
+    /* como centralizar texto */
+    text-align: center;
+}
+
+.titulo-realce {
+    /* como alterar fonte do texto css */
+    font-family: Arial, Helvetica, sans-serif;
+    /* como alterar tamanho fonte do texto css */
+    font-size: 24px;
+    font-size: 1.5rem; /* 1 rem equivale a 16px, ou seja, 1.5 rem dá 24px */
+    /* como alterar a cor do texto css */
+    color: #0000ff;
+}
+
+.negrito {
+    /* definir o texto como negrito css */
+    font-weight: bold;
+}
+
+.underline {
+    /* definir o texto como underline css */
+    text-decoration: underline;
+}
+
+.marquee-container{
+    overflow: hidden;
+    width: 300px;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.marquee{
+    animation: scrolling-text 10s linear infinite;
+    display: inline-block;
+    width: inherit;
+}
+
+@keyframes scrolling-text {
+    0%{
+        text-indent: 100%;
+    }
+
+    100%{
+        text-indent: -100%;
+    }
+}
+
+table,
+tr,
+td,
+th{
+    /* definir a borda da tabela css */
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0000ff;
+    /* versão simplificada procurar por 'border short hand' */
+    border: 1px solid #000;
+}
+
+table thead tr{
+    /* definir o fundo como azul css */
+    background-color: #0000ff;
+}
+
+.coluna-codigo{
+    /* definir o tamanho da coluna da tabela css */
+    width: 100px;
+}
+
+.coluna-nome{
+    width: 200px;
+}
