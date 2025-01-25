@@ -1,0 +1,42 @@
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.spin {
+    transform-origin: center;
+    animation: spin 0.8s ease-in-out infinite;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+#loading{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: #f0f0f0;
+}
+
+#loading svg {
+    width: 200px;
+}
+
+main{
+    display: none;
+    padding: 20px;
+}
+
+img {
+    max-width: 98%;
+}

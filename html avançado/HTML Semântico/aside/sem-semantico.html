@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sem-semantico.css">
+    <link rel="stylesheet" href="../css-reset.css">
+</head>
+<body>
+    <div class="sidebar-esquerda">
+        <!-- ul>li*3>(button.toggle-button)+(ul.hidden-items>li*3) -->
+        <ul>
+            <li>
+                <button class="toggle-button" data-submenu="submenu-calcados">Calçados</button>
+                <ul class="hidden-items" id="submenu-calcados">
+                    <li>Tênis</li>
+                    <li>Sandália</li>
+                    <li>Crocs</li>
+                </ul>
+            </li>
+            <li>
+                <button class="toggle-button" data-submenu="submenu-camisetas">Camisetas</button>
+                <ul class="hidden-items" id="submenu-camisetas">
+                    <li>Adidas</li>
+                    <li>Nike</li>
+                    <li>Tommy</li>
+                </ul>
+            </li>
+            <li>
+                <button class="toggle-button" data-submenu="submenu-giftcards">GitCards</button>
+                <ul class="hidden-items" id="submenu-giftcards">
+                    <li>Netflix</li>
+                    <li>Pokemon</li>
+                    <li>Valorant</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Conteúdo da página</h1>
+    </div>
+    <div class="sidebar-direita">
+        <ul>
+            <li>Perfil
+                <ul>
+                    <li>Alterar Senha</li>
+                    <li>Lista de desejos</li>
+                    <li>Sair</li>
+                </ul>
+            </li>
+            <li>Pedidos
+                <ul>
+                    <li>Todos</li>
+                    <li>Em andamento</li>
+                    <li>Finalizados</li>
+                    <li>Cancelados</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <script src="sem-semantico.js"></script>
+</body>
+</html>
