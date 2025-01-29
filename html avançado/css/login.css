@@ -1,4 +1,4 @@
-:root{
+:root {
     --bg-color: #f0f2f5;
     --container-bg: #fff;
     --text-color: #333;
@@ -20,4 +20,58 @@
     --placeholder-color: #888;
     --shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     --secondary-text: #b0b0b0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background 0.3s ease, color 0.3 ease;
+}
+
+body {
+    background: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    /* */
+    align-items: center;
+    /* */
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+main {
+    background-color: var(--container-bg);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--shadow);
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid var(--input-border);
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.login-header h1 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+}
+
+.login-header p {
+    color: var(--secondary-text);
+}
+
+.form-group {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--secondary-text);
+    font-weight: 500;
+}
+
+input {
+    width: 100%;
 }
