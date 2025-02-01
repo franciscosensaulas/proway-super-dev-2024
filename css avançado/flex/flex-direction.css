@@ -1,0 +1,36 @@
+.negrito {
+    font-weight: bold;
+}
+
+.container {
+    display: flex; /* Ativa o Flexbox*/
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 20px 0;
+    min-height: 100px;
+}
+
+.item{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.row {
+    flex-direction: row; /* Disposição na horizontal (padrão do flexbox) */
+}
+
+.row-reverse{
+    flex-direction: row-reverse; /* Disposição na horizontal, mas invertido*/
+}
+
+.column {
+    flex-direction: column; /* Disposição na vertical */
+}
+
+.column-reverse{
+    flex-direction: column-reverse;  /* Disposição na vertical, mas invertido */
+}

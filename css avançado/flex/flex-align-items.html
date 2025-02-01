@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Exemplos de align-items</title>
+  
+  <link rel="stylesheet" href="flex-align-items.css">
+</head>
+<body>
+
+  <h1>Exemplos de align-items</h1>
+  <p>
+    <span class="negrito">O que é align-items?</span><br>
+    É a propriedade que determina como os itens em um contêiner flex são alinhados ao longo do eixo transversal. Se o contêiner estiver em orientação <code>row</code>, esse alinhamento acontece verticalmente.
+  </p>
+
+  <!-- 1. flex-start -->
+  <section>
+    <h2>align-items: flex-start</h2>
+    <p>
+      <span class="negrito">Descrição:</span> Alinha os itens ao início do contêiner
+      (parte superior, no caso de um eixo horizontal principal).
+    </p>
+    <div class="container flex-start">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+  </section>
+
+  <!-- 2. flex-end -->
+  <section>
+    <h2>align-items: flex-end</h2>
+    <p>
+      <span class="negrito">Descrição:</span> Alinha os itens ao final do contêiner
+      (parte inferior, no caso de um eixo horizontal principal).
+    </p>
+    <div class="container flex-end">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+  </section>
+
+  <!-- 3. center -->
+  <section>
+    <h2>align-items: center</h2>
+    <p>
+      <span class="negrito">Descrição:</span> Alinha os itens ao centro do eixo vertical.
+    </p>
+    <div class="container center">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+  </section>
+
+  <!-- 4. baseline -->
+  <section>
+    <h2>align-items: baseline</h2>
+    <p>
+      <span class="negrito">Descrição:</span> Alinha os itens pela linha de base do texto (útil quando os itens têm tamanhos de fonte diferentes).
+    </p>
+    <div class="container baseline">
+      <div class="item">Item 1<br>(Fonte 1.2rem)</div>
+      <div class="item">Item 2<br>(Fonte 1rem)</div>
+      <div class="item">Item 3<br>(Fonte 1.4rem)</div>
+    </div>
+  </section>
+
+  <!-- 5. stretch -->
+  <section>
+    <h2>align-items: stretch</h2>
+    <p>
+      <span class="negrito">Descrição:</span> Os itens se esticam para preencher todo o espaço disponível no eixo transversal (desde que nenhum valor fixo de altura seja definido para o item).
+    </p>
+    <div class="container stretch">
+      <div class="item">Item 1</div>
+      <div class="item">Item 2</div>
+      <div class="item">Item 3</div>
+    </div>
+  </section>
+
+</body>
+</html>

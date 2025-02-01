@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 20px 0;
+    height: 100px;
+}
+.item{
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+.flex-start{ justify-content: flex-start; }
+.flex-end{ justify-content: flex-end; }
+.center{ justify-content: center; }
+.space-between{ justify-content: space-between; }
+.space-around{ justify-content: space-around; }
+.space-evenly{ justify-content: space-evenly; }
