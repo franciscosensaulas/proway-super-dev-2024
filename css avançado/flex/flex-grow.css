@@ -1,0 +1,32 @@
+main {
+    display: flex;
+    border: 2px solid #333;
+    padding: 10px;
+    margin: 20px;
+    height: 150px;
+}
+
+.item {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 20px;
+    margin: 5px;
+    text-align: center;
+    font-size: 1rem;
+    /* Caso não seja definido flex-grow, o valor padrão é 0 */
+}
+
+/* CCada item com flex-grow diferente */
+.item-1 {
+    flex-grow: 1;
+}
+
+.item-2 {
+    flex-grow: 2;
+}
+
+.item-3 {
+    flex-grow: 3;
+}
+
+/* Alt + Shift + F => Formatar o código */
