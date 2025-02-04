@@ -16,7 +16,7 @@ main {
     /* Caso não seja definido flex-grow, o valor padrão é 0 */
 }
 
-/* CCada item com flex-grow diferente */
+/* Cada item com flex-grow diferente */
 .item-1 {
     flex-grow: 1;
 }

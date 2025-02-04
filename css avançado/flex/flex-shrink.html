@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="flex-shrink.css">
+</head>
+<body>
+    <h1>Exemplo de flex-shrink</h1>
+    <p>
+        <span class="negrito">Como funciona?</span> Quando a soma dos tamanhos iniciais (flex-basis) excede o espaço disponível no container, os itens são "comprimidos" de acordo com o valor de <code>flex-shrink</code>. Um item com <code>flex-shrink: 2</code> vai encolher o dobro em relação a um item com <code>flex-shrink: 1</code>. Já um item com <code>flex-shrink: 0</code> não encolhe.
+    </p>
+
+    <main>
+        <div class="item item-1">Item 1 (shrink: 1)</div>
+        <div class="item item-2">Item 2 (shrink: 0)</div>
+        <div class="item item-3">Item 3 (shrink: 2)</div>
+    </main>
+</body>
+</html>
