@@ -1,0 +1,26 @@
+.container{
+    display: flex; /* Ativa o flex */
+    flex-wrap: wrap; /* Permite múltiplas linhas */
+    width: 400px;
+    height: 300px;
+    border: 2px solid #333;
+    margin: 20px 0;
+}
+.item{
+    background-color: #4CAF50;
+    counter-reset: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1rem;
+    box-sizing: border-box;
+    flex: 0 0 50%; /* 2 itens por linha (50% cada) */
+}
+
+/* Diferentes valores de align-content */
+.flex-start{ align-content: flex-start;}
+.flex-end{ align-content: flex-end;}
+.center{ align-content: center;}
+.space-between{ align-content: space-between;}
+.space-around{ align-content: space-around;}
+.space-evenly{ align-content: space-evenly;}
+.stretch{ align-content: stretch;}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplos de align-content</title>
+    <link rel="stylesheet" href="css/flex-align-content.css">
+</head>
+
+<body>
+
+    <h1>Exemplos de align-content</h1>
+    <p>
+        <span class="negrito">O que é align-content?</span>
+        É a propriedade que determina como as linhas (ou colunas) dentro
+        de um contêiner flex são distribuídas ao longo do eixo transversal.
+        Para que funcione, é preciso haver múltiplas linhas — ou seja,
+        <code>flex-wrap</code> precisa estar ativado, e os itens devem ocupar
+        mais de uma linha.
+    </p>
+
+    <!-- 1. flex-start -->
+    <section>
+        <h2>align-content: flex-start</h2>
+        <p><span class="negrito">Descrição:</span> As linhas são agrupadas no início do eixo transversal (parte
+            superior, se for <code>flex-direction: row</code>).</p>
+        <div class="container flex-start">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </section>
+
+    <!-- 2. flex-end -->
+    <section>
+        <h2>align-content: flex-end</h2>
+        <p><span class="negrito">Descrição:</span> As linhas são agrupadas no final do eixo transversal (parte inferior,
+            se for <code>flex-direction: row</code>).</p>
+        <div class="container flex-end">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </section>
+
+    <!-- 3. center -->
+    <section>
+        <h2>align-content: center</h2>
+        <p><span class="negrito">Descrição:</span> As linhas são agrupadas ao centro do eixo transversal.</p>
+        <div class="container center">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </section>
+
+    <!-- 4. space-between -->
+    <section>
+        <h2>align-content: space-between</h2>
+        <p><span class="negrito">Descrição:</span> As linhas são distribuídas com espaços iguais entre elas, mas sem
+            espaço extra nas extremidades (topo e base).</p>
+        <div class="container space-between">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </section>
+
+    <!-- 5. space-around -->
+    <section>
+        <h2>align-content: space-around</h2>
+        <p><span class="negrito">Descrição:</span> As linhas têm espaços iguais antes e depois de cada linha, incluindo
+            as extremidades, embora de maneira balanceada.</p>
+        <div class="container space-around">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </section>
+
+    <!-- 6. space-evenly -->
+    <section>
+        <h2>align-content: space-evenly</h2>
+        <p><span class="negrito">Descrição:</span> Distribui as linhas de forma uniforme, garantindo espaços iguais
+            entre as linhas e as bordas do contêiner.</p>
+        <div class="container space-evenly">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </section>
+
+    <!-- 7. stretch -->
+    <section>
+        <h2>align-content: stretch</h2>
+        <p><span class="negrito">Descrição:</span> Todas as linhas se esticam para preencher o espaço vertical, se não
+            houver outra restrição de altura nos itens.</p>
+        <div class="container stretch">
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+            <div class="item">Item 5</div>
+            <div class="item">Item 6</div>
+        </div>
+    </section>
+
+</body>
+
+</html>
