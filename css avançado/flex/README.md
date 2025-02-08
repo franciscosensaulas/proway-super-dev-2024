@@ -8,3 +8,6 @@ Criar uma página chamada home.html
 - Criar uma tag main com:
   - Uma div com várias imagens verticais, apresentadas em colunas com as imagens centralizadas horizontalmetne
 - Criar um footer com icones centralizados
+1h para finalizar o exercício, até 19:20
+
+font awesome

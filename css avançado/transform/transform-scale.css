@@ -1,0 +1,33 @@
+.scale-1{
+    background-color: #2ecc71;
+    transform: scale(1);
+    margin-right: 10px;
+}
+.scale-1-5{
+    background-color: #3498db;
+    transform: scale(1.5); /* 150% ou seja, o tamanho original + 50% */
+}
+.scale-0-5{
+    background-color: #e74c3c;
+    transform: scale(0.5); /* 50% do tamanho original */
+}
+.scale-hover{
+    background-color: #9b59b6;
+    transition: transform 0.5s ease
+}
+.scale-hover:hover{
+    transform: scale(4.2) rotate(90deg);
+    background-color: #67307d;
+    z-index: 99999999;
+}
+
+.scale-hover:active{
+    background-color: #48175b;
+    transform: scale(4.2) rotate(0deg);
+}
+.scale-active{
+    background-color: #f39c12;
+}
+.scale-active:active{
+    transform: scale(0.8);
+}

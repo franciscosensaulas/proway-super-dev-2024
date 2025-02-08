@@ -1,0 +1,26 @@
+
+.rotate-45{
+    background-color: #3498db;
+    transform: rotate(45deg);
+}
+.rotate-90{
+    background-color: #e74c3c;
+    transform: rotate(90deg);
+}
+.rotate-180{
+    background-color: #2ecc71;
+    transform: rotate(180deg);
+}
+.rotate-hover{
+    background-color: #9b49b6;
+    text-align: center;
+}
+.rotate-hover:hover{
+    transform: rotate(15deg);
+}
+.rotate-active{
+    background-color: #f39c12;
+}
+.rotate-active:active{
+    transform: rotate(-15deg);
+}
