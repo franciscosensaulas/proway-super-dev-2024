@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2rem;
+    display: grid;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f0f0f0;
+}
+
+.animation-box {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+.pulse {
+    width: 100px;
+    height: 100px;
+    background-color: #ff4757;
+    border-radius: 50%;
+    animation: pulso 2s infinite;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.pulse span {
+    user-select: none;
+}
+
+@keyframes pulso {
+    0% {
+        transform: scale(0.95);
+        color: green;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        transform: scale(1.1);
+        color: purple;
+    }
+
+    75% {
+
+        color: red;
+    }
+
+    100% {
+        transform: scale(0.95);
+        color: green;
+    }
+}
+
+.cube {
+    width: 100px;
+    height: 100px;
+    background-color: #2ed573;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: rotate 4s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.inner-cube {
+    width: 50px;
+    height: 50px;
+    background-color: aqua;
+    animation: rotate-inverse 1s linear infinite;
+}
+
+
+@keyframes rotate-inverse {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+.hover-card {
+    width: 200px;
+    height: 200px;
+    background-color: #1e90ff;
+    transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.text-slide{
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #000;
+    animation: escrevendo 3s steps(40) infinite;
+}
+@keyframes escrevendo {
+    0% { width: 0;}
+    50% { width: 300px;}
+    100% { width: 0px;}
+}

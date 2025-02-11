@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+.btn {
+    background-color: #6200ea;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.card {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+main{
+    display: grid;
+    gap: 2rem;
+    max-width: 800px;
+    width: 100%;
+}
+
+.ripple {
+    position: relative;
+    overflow: hidden;
+    transition: background 0.3s;
+}
+
+.ripple::after{
+    content: '';
+    position: absolute;
+    width: 200%;
+    padding-top: 200%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.ripple.active::after{
+    animation: ripple 0.6s ease-out;
+}
+
+@keyframes ripple {
+    from{
+        transform: translate(-50%, -50%) scale(0);
+        opacity: 1;
+    }
+    to{
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
+}
+
+.image-container{
+    position: relative;
+    width: 300px;
+    max-height: 200px;
+    border-radius: 8px;
+}
+
+.image-container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.losango{
+    width: 150px;
+    height: 150px;
+    background-color: #FF4081;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.text-ripple{
+    color: #333; 
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

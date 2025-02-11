@@ -1,0 +1,54 @@
+main{
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img{
+    width: 100%;
+    transition: clip-path 1s ease-in-out;
+}
+
+img.polygon{
+    /* pontos: canto superior esquerdo, superior direito, inferior direito, inferior esquerdo */
+
+
+    /* cada ponto é composto por x(horizontal) e y(vertical) */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+img.polygon:hover{
+    /* 
+        Ao passar o mouse transforma em um losango
+        pontos:: topo central, centro direito, centro inferior e centro esquerdo
+     */
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+}
+
+img.circle{
+    /* 
+        20% de raio
+        50% posição horizontal do centro do círculo
+        50% posição vertical do centro do círculo
+     */
+     clip-path: circle(20% at 50% 50%);
+}
+img.circle:hover{
+    /* 
+        50% de raio
+        50% posição horizontal do centro do círculo
+        50% posição vertical do centro do círculo
+     */
+     clip-path: circle(50% at 50% 50%);
+}
+img.ellipse{
+    /* ellipse(raio horizontal, raio vertical, posição horizontal do centro, posição vertical do centro */
+    clip-path: ellipse(10% 10% at 50% 50%);
+}
+img.ellipse:hover{
+    clip-path: ellipse(50% 50% at 50% 50%);
+}
+img.inset {clip-path: inset(0);}
+img.inset:hover{clip-path: inset(20%);}
