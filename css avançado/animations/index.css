@@ -122,3 +122,83 @@ body {
     50% { width: 300px;}
     100% { width: 0px;}
 }
+
+.spinner{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f1f2f6;
+    border-top: 5px solid #2ed573;
+    border-radius: 50%;
+    animation-name: girar;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    /* Shorthand */
+    animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg);}
+}
+
+.color-change{
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(45deg, #ff6b6b, #4ecdc4);
+    animation: alterarCor 4s infinite alternate;
+}
+
+@keyframes alterarCor {
+    0%{ filter: hue-rotate(0deg);}
+    100%{ filter: hue-rotate(360deg);}
+}
+
+.bounce-container{
+    height: 200px;
+    border-bottom: 2px solid #ddd;
+}
+
+.bounce-ball {
+    width: 50px;
+    height: 50px;
+    background: #ffa502;
+    border-radius: 50%;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: bounce 4s infinite;
+}
+@keyframes bounce {
+    0% { transform: translate(0, 0);} /* Ponto inicial */
+    25% { transform: translate(0, 150px);}  /* ⬇ */
+    50% { transform: translate(150px, 150px);} /* ➡ */
+    75% { transform: translate(150px, 0);} /* ⬆ */
+    100% { transform: translate(0, 0);} /* Ponto inicial ⬅ */
+}
+
+.marquee{
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.marquee span{
+    display: inline-block;
+    animation: marquee 10s linear infinite;
+}
+@keyframes marquee {
+    0% { transform: translateX(100%);}
+    100% { transform: translateX(-100%);}
+}
+.progress-bar{
+    width: 300px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.progress{
+    width: 0%; height: 100%; background: #2ed573; animation: progress 3s linear infinite
+}
+@keyframes progress {
+    0% { width: 0%;}
+    100% { width: 100%;}
+}

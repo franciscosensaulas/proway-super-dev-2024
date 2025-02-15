@@ -1,0 +1,20 @@
+nav{
+    background: #34495e;
+    padding: 1rem;
+}
+
+.hamburguer{
+    display: none;
+    cursor: pointer;
+}
+
+.nav-links{
+    display: flex;
+    list-style: none;
+}
+
+.nav-links a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
